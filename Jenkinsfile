@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         bat 'gradle build'
+	echo "***************Build Completed***************"
       }
     }
     stage('deploy') {
